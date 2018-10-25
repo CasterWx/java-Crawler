@@ -10,11 +10,7 @@ import org.apache.http.util.EntityUtils;
 
 public class getDome {
     public static void main(String[] args) throws Exception {
-        CloseableHttpClient closeableHttpClient = HttpClients.createDefault() ;
-        HttpGet httpget = new HttpGet("https://www.zhihu.com/question/35474744");
-        CloseableHttpResponse closeableHttpResponse = closeableHttpClient.execute(httpget) ;
-        HttpEntity httpEntity = closeableHttpResponse.getEntity() ;
-        String text = (EntityUtils.toString(httpEntity)) ;
-        System.out.println(text);
+        // 10/25
+        // 知乎模拟登录方式改版，失效
     }
 }
